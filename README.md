@@ -4,7 +4,7 @@
 
 Copy the folder of the custom theme.
 
-Note: In order to see changes without restarting the Keycloak server you need to edit the standalone.xml file on your Keycloak server to disable caching.
+Note: In Development stage, In order to see changes without restarting the Keycloak server you need to edit the standalone.xml file on your Keycloak server to disable caching.
 
 located here: 
 
