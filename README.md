@@ -12,6 +12,7 @@ located here:
 ./standalone/configuration/standalone.xml
 ```
 
+
 Make the following changes to standalone.
 
 ```javscript
@@ -22,6 +23,9 @@ Make the following changes to standalone.
     ...
 </theme>
 ```
+
+Remember to re-enable caching in production as it will significantly impact performance.
+
 
 Then, copy selected theme folder, paste it on the Keycloak's theme directory located here: 
 
