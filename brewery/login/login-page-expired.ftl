@@ -1,4 +1,4 @@
-<#import "template.ftl" as layout>
+<#import "page-expired-template.ftl" as layout>
 <@layout.registrationLayout; section>
     <#if section = "header">
         ${msg("pageExpiredTitle")}

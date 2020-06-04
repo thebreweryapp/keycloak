@@ -40,9 +40,9 @@
             <div class="login-form-wrapper">
                 <div class="login-wrapper-content">
                     <div id="login-form-title">
-                        <h1 class="h1-line-title"> Lets start brewing! </h1>
-                        <h3 class="h3-line-title"> Sign in to experience and discover The Brewery. </h3>
-                        <div id="login-form-paragraph"> For Stratpoint employees, please login using your Timesheet account. </div>
+                        <h1 class="h1-line-title"> Page Expired! </h1>
+                        <#--  <h3 class="h3-line-title"> Sign in to experience and discover The Brewery. </h3>  -->
+                        <#--  <div id="login-form-paragraph"> For Stratpoint employees, please login using your Timesheet account. </div>  -->
                     </div>
                     
                         <#-- App-initiated actions should not see warning messages about the need to complete the action -->
