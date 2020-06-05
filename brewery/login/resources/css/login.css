@@ -8,9 +8,10 @@
 }
 
 .alert-error {
-    background-color: #ffffff;
+
     border-color: #cc0000;
     color: #333333;
+    text-align: right;
 }
 
 #kc-locale ul {
@@ -158,6 +159,41 @@ div.kc-logo-text span {
     font-size: 16px;
 }
 
+
+#input-type-effect :hover {
+    border-color: #ffdf6b;
+    border-right-width: 1px !important;
+}
+
+#input-type-effect :focus {
+    border-color: #ffdf6b;
+    border-right-width: 1px !important;
+    outline: 0;
+    box-shadow: 0 0 0 2px rgba(249, 204, 65, 0.2)
+}
+
+
+.register-input-type-format {
+    box-sizing: border-box;
+    margin: 0;
+    font-variant: tabular-nums;
+    list-style: none;
+    font-feature-settings: 'tnum';
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    color: rgba(0, 0, 0, 0.65);
+    line-height: 1.5;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+    transition: all 0.3s;
+    height: 30px;
+    padding: 5px 10px;
+    font-size: 15px;
+}
+
 .row-format {
     box-sizing: border-box;
     margin: 0;
@@ -171,6 +207,8 @@ div.kc-logo-text span {
     margin-bottom: 24px;
     vertical-align: top;
 }
+
+
 
 #label-format {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -262,6 +300,7 @@ div.kc-logo-text span {
     text-align: center;
 }
 
+
 #kc-webauthn-settings-form{
     padding-top:8px;
 }
@@ -277,16 +316,24 @@ div.kc-logo-text span {
 
 #kc-info-wrapper {
     font-size: 13px;
+    text-align: center;
 }
 
 #kc-form-options span {
     display: block;
+    text-align: center;
+    margin-top: 0.5em;
 }
 
 
 #kc-form-options .checkbox {
     margin-top: 0;
     color: #72767b;
+}
+
+#kc-form-options :hover {
+        color: #ffdf6b;
+
 }
 
 #kc-terms-text {
@@ -566,17 +613,16 @@ a.zocial  {
     color: #fff;
 }
 
-#kc-form-buttons {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    color: rgba(0, 0, 0, 0.65);
-    font-size: 14px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    line-height: 1.5;
-    list-style: none;
-    font-feature-settings: 'tnum';
+
+#kc-form-buttons :hover{
+    color: #fff;
+    background-color: #ffdf6b;
+    border-color: #ffdf6b;
+    cursor: pointer;
+
 }
+
+
 
 .button-format {
     line-height: 1.5;
@@ -593,13 +639,15 @@ a.zocial  {
     user-select: none;
     touch-action: manipulation;
     height: 32px;
-    padding: 0 15px;
+    padding: 15px;
     font-size: 14px;
     border-radius: 4px;
     color: rgba(0, 0, 0, 0.65);
     background-color: #fff;
     border-color: #d9d9d9;
 }
+
+
 
 .login-wrapper-content {
     box-sizing: border-box;
@@ -614,7 +662,7 @@ a.zocial  {
     font-feature-settings: 'tnum';
 }
 
-#kc-login {
+.kc-login {
     border: none;
     border-radius: 3px;
     background-color: #f9cc41 ;
@@ -624,7 +672,7 @@ a.zocial  {
     color: white;
     text-transform: none;
     padding: 20px;
-    margin-top: 3em;
+    margin-top: 1.5em;
     width: 100%;
     transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
     height: 32px;
@@ -632,6 +680,25 @@ a.zocial  {
     font-size: 14px;
     border-radius: 32px;
 }
+
+.kc-login :hover{
+    color: #fff;
+    background-color: #ffdf6b;
+    border-color: #ffdf6b;
+}
+
+
+.register-href {
+    text-decoration: none;
+    color: #f9cc41;
+
+}
+
+.ahac-href {
+    text-decoration: none;
+    color: rgba(0,0,0,0.6);
+}
+
 
 .google-login {
     border: none;
@@ -658,9 +725,6 @@ a.zocial  {
     border-radius: 32px;
 }
 
-.google-ul-class {
-    
-}
 
 .login-pf-page .login-pf-brand {
   margin-top: 20px;
@@ -738,6 +802,7 @@ a.zocial  {
     color: #fff;
     margin-top: 0;
 }
+
 
 .login-pf-page .list-view-pf .list-group-item {
     border-bottom: 1px solid #ededed;
