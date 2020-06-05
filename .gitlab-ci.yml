@@ -1,0 +1,22 @@
+image: node:lts
+
+stages:
+  - deploy
+
+.deploy: &deploy
+  before_script:
+    - oc login "$OPENSHIFT_SERVER" --token="$OPENSHIFT_TOKEN" --insecure-skip-tls-verify
+    - oc project keycloak
+  script:
+    - "oc rsync brewery keycloak-d44c87c7c-gqw9k:opt/jboss/keycloak/themes/"
+    
+
+Deploy:
+  image: jhidalgo3/openshift-node-docker:7-alpine
+  <<: *deploy
+  stage: deploy
+  environment:
+    name: develop
+    url: https://$OPENSHIFT_DOMAIN
+  only:
+    - develop
