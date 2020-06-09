@@ -8,7 +8,7 @@ stages:
     - oc login "$OPENSHIFT_SERVER" --token="$OPENSHIFT_TOKEN" --insecure-skip-tls-verify
     - oc project keycloak
   script:
-    - "oc rsync brewery keycloak-d44c87c7c-gqw9k:opt/jboss/keycloak/themes/"
+    - "oc rsync jar keycloak-d44c87c7c-gqw9k:opt/jboss/keycloak/standalone/deployments/"
     
 
 Deploy:
