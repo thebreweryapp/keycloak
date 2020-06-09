@@ -41,8 +41,7 @@
                 <div class="login-wrapper-content">
                     <div id="login-form-title">
                         <h1 class="h1-line-title"> Lets start brewing! </h1>
-                        <h3 class="h3-line-title"> Sign in to experience The brewery single sign-on. </h3>
-                        <div id="login-form-paragraph"> For Stratpoint employees, please login using your Timesheet account. </div>
+                        <h3 class="h3-line-title"> Sign-in to experience The Brewery single sign-on. </h3>
                     </div>
                     
                         <#-- App-initiated actions should not see warning messages about the need to complete the action -->
@@ -79,7 +78,7 @@
             
       </div>
       <div class="footer">Powered by: <div>
-        <span id="poweredby-image"> </span>
+        <a href="https://www.keycloak.org/" id="poweredby-image"></a>
       </div>
 </body>
 </html>
