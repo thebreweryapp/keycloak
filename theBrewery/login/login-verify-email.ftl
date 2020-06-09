@@ -1,4 +1,4 @@
-<#import "template.ftl" as layout>
+<#import "login-verify-email-template.ftl" as layout>
 <@layout.registrationLayout; section>
     <#if section = "header">
         ${msg("emailVerifyTitle")}

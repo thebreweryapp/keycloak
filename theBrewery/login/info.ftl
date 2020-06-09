@@ -1,4 +1,4 @@
-<#import "template.ftl" as layout>
+<#import "login-verify-email-template.ftl" as layout>
 <@layout.registrationLayout displayMessage=false; section>
     <#if section = "header">
         <#if messageHeader??>
