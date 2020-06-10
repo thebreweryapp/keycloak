@@ -1,4 +1,4 @@
-<#import "template.ftl" as layout>
+<#import "forgot-password.ftl" as layout>
 <@layout.registrationLayout displayInfo=true; section>
     <#if section = "header">
         ${msg("emailForgotTitle")}
@@ -10,21 +10,21 @@
                 </div>
                 <div class="${properties.kcInputWrapperClass!}">
                     <#if auth?has_content && auth.showUsername()>
-                        <input type="text" id="username" name="username" class="${properties.kcInputClass!}" autofocus value="${auth.attemptedUsername}"/>
+                        <input type="text" id="username" name="username" class="input-type-format" autofocus value="${auth.attemptedUsername}"/>
                     <#else>
-                        <input type="text" id="username" name="username" class="${properties.kcInputClass!}" autofocus/>
+                        <input type="text" id="username" name="username" class="input-type-format" autofocus/>
                     </#if>
                 </div>
             </div>
             <div class="${properties.kcFormGroupClass!} ${properties.kcFormSettingClass!}">
                 <div id="kc-form-options" class="${properties.kcFormOptionsClass!}">
                     <div class="${properties.kcFormOptionsWrapperClass!}">
-                        <span><a href="${url.loginUrl}">${kcSanitize(msg("backToLogin"))?no_esc}</a></span>
+                        <span><a href="${url.loginUrl}" class="ahac-href">${kcSanitize(msg("backToLogin"))?no_esc}</a></span>
                     </div>
                 </div>
 
                 <div id="kc-form-buttons" class="${properties.kcFormButtonsClass!}">
-                    <input class="${properties.kcButtonClass!} ${properties.kcButtonPrimaryClass!} ${properties.kcButtonBlockClass!} ${properties.kcButtonLargeClass!}" type="submit" value="${msg("doSubmit")}"/>
+                    <input class="kc-login ${properties.kcButtonPrimaryClass!} ${properties.kcButtonBlockClass!} ${properties.kcButtonLargeClass!}" type="submit" value="${msg("doSubmit")}"/>
                 </div>
             </div>
         </form>

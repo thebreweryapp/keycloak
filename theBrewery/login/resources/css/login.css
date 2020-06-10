@@ -14,6 +14,14 @@
     text-align: right;
 }
 
+#kc-error-message {
+    text-align: center;
+}
+
+#kc-info-message {
+    text-align: center;
+}
+
 #kc-locale ul {
     display: none;
     position: absolute;
@@ -277,9 +285,26 @@ div.kc-logo-text span {
     padding: 2.5em;
     box-sizing: border-box;
     font-size: 14px;
-
 }
 
+
+.error-form-wrapper {
+    margin-top: 170px;
+    width: 100%;
+    padding: 2.5em;
+    box-sizing: border-box;
+    font-size: 14px;
+    text-align: center;
+}
+
+.info-form-wrapper {
+    margin-top: 170px;
+    width: 100%;
+    padding: 2.5em;
+    box-sizing: border-box;
+    font-size: 14px;
+    text-align: center;
+}
 
 #logo-container {
     border-radius: 6px 0 0 6px;
@@ -325,7 +350,7 @@ div.kc-logo-text span {
 } */
 
 #kc-info {
-    padding-bottom: 200px;
+    padding-bottom: 100px;
     margin-bottom: -200px;
 }
 
@@ -335,6 +360,12 @@ div.kc-logo-text span {
 }
 
 #kc-form-options span {
+    display: block;
+    text-align: center;
+    margin-top: 0.5em;
+}
+
+.forgot-password-label {
     display: block;
     text-align: center;
     margin-top: 0.5em;
@@ -699,6 +730,30 @@ a.zocial  {
     font-feature-settings: 'tnum';
 }
 
+.error-wrapper-content {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    color: rgba(0, 0, 0, 0.65);
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.5;
+    list-style: none;
+    font-feature-settings: 'tnum';
+}
+
+.info-wrapper-content {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    color: rgba(0, 0, 0, 0.65);
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.5;
+    list-style: none;
+    font-feature-settings: 'tnum';
+}
+
 .kc-login {
     border: none;
     border-radius: 3px;
@@ -734,6 +789,11 @@ a.zocial  {
 .ahac-href {
     text-decoration: none;
     color: #f9cc41;
+}
+
+.forgotpw-ahac-href {
+    text-decoration: none;
+    color: rgba(0,0,0,0.6);
 }
 
 

@@ -12,7 +12,7 @@
             <meta name="${meta?split('==')[0]}" content="${meta?split('==')[1]}"/>
         </#list>
     </#if>
-    <title>${msg("registerTitle",(realm.displayName!''))}</title>
+    <title>${msg("loginTitle",(realm.displayName!''))}</title>
     <link rel="icon" href="${url.resourcesPath}/img/favicon.ico" />
     <#if properties.styles?has_content>
         <#list properties.styles?split(' ') as style>
@@ -37,11 +37,12 @@
             <div id="logo-container" >
                 <span id="logo-image"> </span>
             </div>
-            <div class="info-form-wrapper">
-                <div class="info-wrapper-content">
+            <div class="error-form-wrapper">
+                <div class="error-wrapper-content">
                     <div id="login-form-title">
-                        <h1 class="h1-line-title"> Lets start brewing! </h1>
-                        <#--  <h3 class="h3-line-title"> Sign-up to experience The Brewery single sign-on. </h3>  -->
+                        <h1 class="h1-line-title"> Error Occured! </h1>
+                        <#--  <h3 class="h3-line-title"> Sign in to experience and discover The Brewery. </h3>  -->
+                        <#--  <div id="login-form-paragraph"> For Stratpoint employees, please login using your Timesheet account. </div>  -->
                     </div>
                     
                         <#-- App-initiated actions should not see warning messages about the need to complete the action -->
@@ -77,11 +78,7 @@
             </div>
             
       </div>
-      <div class="footer">Powered by: <div>
-        <a href="https://www.keycloak.org/" id="poweredby-image"></a>
-      </div>
    </div>
-
 </body>
 </html>
 </#macro>

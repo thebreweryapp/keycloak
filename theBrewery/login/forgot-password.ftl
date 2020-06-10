@@ -37,11 +37,11 @@
             <div id="logo-container" >
                 <span id="logo-image"> </span>
             </div>
-            <div class="info-form-wrapper">
-                <div class="info-wrapper-content">
+            <div class="login-form-wrapper">
+                <div class="login-wrapper-content">
                     <div id="login-form-title">
                         <h1 class="h1-line-title"> Lets start brewing! </h1>
-                        <#--  <h3 class="h3-line-title"> Sign-up to experience The Brewery single sign-on. </h3>  -->
+                        <h3 class="h3-line-title"> Sign-in to experience The Brewery single sign-on. </h3>
                     </div>
                     
                         <#-- App-initiated actions should not see warning messages about the need to complete the action -->
