@@ -129,10 +129,9 @@ div.kc-logo-text span {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     position: absolute;
     color: rgba(0, 0, 0, 0.65);
-    text-align: center;
-    right: 0;
-    bottom: 0;
-    padding-bottom: 10mm;
+    text-align: right;
+    right: 0px;
+    bottom: 0px;
     
 }
 
@@ -734,7 +733,7 @@ a.zocial  {
 
 .ahac-href {
     text-decoration: none;
-    color: rgba(0,0,0,0.6);
+    color: #f9cc41;
 }
 
 
