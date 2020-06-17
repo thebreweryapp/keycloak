@@ -298,12 +298,14 @@ div.kc-logo-text span {
 }
 
 .info-form-wrapper {
-    margin-top: 170px;
+    margin-top: 0px;
     width: 100%;
     padding: 2.5em;
     box-sizing: border-box;
     font-size: 14px;
     text-align: center;
+    overflow:auto;
+    margin-bottom: 120px;
 }
 
 #logo-container {
@@ -385,6 +387,7 @@ div.kc-logo-text span {
 }
 
 #kc-terms-text {
+    margin-top: 0px;
     margin-bottom: 20px;
 }
 
@@ -690,17 +693,31 @@ a.zocial  {
 
 }
 
+
 #kc-decline-terms :hover{
     color: #fff;
     background-color: #f17974;
     border-color: #f17974;
     cursor: pointer;
 }
+
 #kc-accept-terms :hover{
     color: #fff;
     background-color: #ffdf6b;
     border-color: #ffdf6b;
     cursor: pointer;
+}
+
+
+
+.terms-button-container {
+    position: absolute;
+    left: 50;
+    top: 80%;
+    width: 25rem;
+    /* right: 0%; */
+    /* margin-bottom: 5px; */
+
 }
 
 
@@ -803,6 +820,7 @@ a.zocial  {
     padding: 0 16px;
     font-size: 14px;
     border-radius: 32px;
+
 }
 
 .kc-decline-terms {
@@ -815,13 +833,14 @@ a.zocial  {
     color: white;
     text-transform: none;
     padding: 20px;
-    margin-top: 1.5em;
+    margin-top: 0.5em;
     width: 100%;
     transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
     height: 32px;
     padding: 0 16px;
     font-size: 14px;
     border-radius: 32px;
+
 }
 
 
@@ -846,7 +865,7 @@ a.zocial  {
 
 .forgotpw-ahac-href {
     text-decoration: none;
-    color: rgba(0,0,0,0.6);
+    color: #f9cc41;
 }
 
 
