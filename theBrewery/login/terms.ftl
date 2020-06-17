@@ -1,4 +1,4 @@
-<#import "template.ftl" as layout>
+<#import "login-verify-email-template.ftl" as layout>
 <@layout.registrationLayout displayMessage=false; section>
     <#if section = "header">
         ${msg("termsTitle")}
@@ -7,8 +7,12 @@
         ${kcSanitize(msg("termsText"))?no_esc}
     </div>
     <form class="form-actions" action="${url.loginAction}" method="POST">
-        <input class="${properties.kcButtonClass!} ${properties.kcButtonPrimaryClass!} ${properties.kcButtonLargeClass!}" name="accept" id="kc-accept" type="submit" value="${msg("doAccept")}"/>
-        <input class="${properties.kcButtonClass!} ${properties.kcButtonDefaultClass!} ${properties.kcButtonLargeClass!}" name="cancel" id="kc-decline" type="submit" value="${msg("doDecline")}"/>
+        <div id="kc-accept-terms">
+        <input class="kc-accept-terms ${properties.kcButtonClass!} ${properties.kcButtonPrimaryClass!} ${properties.kcButtonLargeClass!}" name="accept" id="kc-accept" type="submit" value="${msg("doAccept")}"/>
+        </div>
+        <div id="kc-decline-terms">
+        <input class="kc-decline-terms ${properties.kcButtonClass!} ${properties.kcButtonDefaultClass!} ${properties.kcButtonLargeClass!}" name="cancel" id="kc-decline" type="submit" value="${msg("doDecline")}"/>
+        </div>
     </form>
     <div class="clearfix"></div>
     </#if>

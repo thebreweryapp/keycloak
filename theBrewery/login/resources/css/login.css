@@ -690,6 +690,19 @@ a.zocial  {
 
 }
 
+#kc-decline-terms :hover{
+    color: #fff;
+    background-color: #f17974;
+    border-color: #f17974;
+    cursor: pointer;
+}
+#kc-accept-terms :hover{
+    color: #fff;
+    background-color: #ffdf6b;
+    border-color: #ffdf6b;
+    cursor: pointer;
+}
+
 
 
 .button-format {
@@ -772,6 +785,46 @@ a.zocial  {
     font-size: 14px;
     border-radius: 32px;
 }
+
+.kc-accept-terms {
+    border: none;
+    border-radius: 3px;
+    background-color: #f9cc41 ;
+    border-color: #f9cc41;
+    color: rgba(0,0,0,0.6);
+    font-size: 14px;
+    color: white;
+    text-transform: none;
+    padding: 20px;
+    margin-top: 1.5em;
+    width: 100%;
+    transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+    height: 32px;
+    padding: 0 16px;
+    font-size: 14px;
+    border-radius: 32px;
+}
+
+.kc-decline-terms {
+    border: none;
+    border-radius: 3px;
+    background-color: #fc160e ;
+    border-color: #f9cc41;
+    color: rgba(0,0,0,0.6);
+    font-size: 14px;
+    color: white;
+    text-transform: none;
+    padding: 20px;
+    margin-top: 1.5em;
+    width: 100%;
+    transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+    height: 32px;
+    padding: 0 16px;
+    font-size: 14px;
+    border-radius: 32px;
+}
+
+
 
 /* .kc-login :hover{
     color: #fff;
