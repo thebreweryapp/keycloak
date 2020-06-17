@@ -11,14 +11,12 @@
         <div id="kc-accept-terms">
             <input class="kc-accept-terms" name="accept" id="kc-accept" type="submit" value="${msg("doAccept")}"/>
         </div>
+
+
+    </form>
         <div id="kc-decline-terms">
             <button onclick="location.href='${client.baseUrl}'" class="kc-decline-terms" id="kc-decline-terms">Decline</button>
         </div>
-                <#--  <div id="kc-decline-terms">  -->
-
-        <#--  </div>  -->
-    </form>
-
     <div class="clearfix"></div>
     </div>
     </#if>
