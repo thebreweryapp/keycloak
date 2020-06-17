@@ -7,7 +7,11 @@
             ${msg("emailVerifyInstruction1")}
         </p>
         <p class="instruction">
-            ${msg("emailVerifyInstruction2")} <a href="${url.loginAction}">${msg("doClickHere")}</a> ${msg("emailVerifyInstruction3")}
+            ${msg("emailVerifyInstruction2")} <a class="ahac-href" href="${url.loginAction}">${msg("doClickHere")}</a> ${msg("emailVerifyInstruction3")}
         </p>
+        <p>
+            <a href="${client.baseUrl}" class="ahac-href">Back To Login</a>
+        </p>
+
     </#if>
 </@layout.registrationLayout>
