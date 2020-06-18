@@ -19,6 +19,8 @@
                 <p><a class="ahac-href" href="${client.baseUrl}">${kcSanitize(msg("backToApplication"))?no_esc}</a></p>
             </#if>
         </#if>
+            <a href="${client.baseUrl}" class="ahac-href">Back To Login</a>
+
     </div>
     </#if>
 </@layout.registrationLayout>

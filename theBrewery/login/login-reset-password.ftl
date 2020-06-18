@@ -16,19 +16,22 @@
                     </#if>
                 </div>
             </div>
-            <div class="${properties.kcFormGroupClass!} ${properties.kcFormSettingClass!}">
-                <div id="kc-form-options" class="${properties.kcFormOptionsClass!}">
-                    <div class="${properties.kcFormOptionsWrapperClass!}">
-                        <span><a href="${url.loginUrl}" class="ahac-href">${kcSanitize(msg("backToLogin"))?no_esc}</a></span>
-                    </div>
-                </div>
+            <div class="emailins-label">
+    
+    <#elseif section = "info" >
+        ${msg("emailInstruction")}
 
                 <div id="kc-form-buttons" class="${properties.kcFormButtonsClass!}">
                     <input class="kc-login ${properties.kcButtonPrimaryClass!} ${properties.kcButtonBlockClass!} ${properties.kcButtonLargeClass!}" type="submit" value="${msg("doSubmit")}"/>
                 </div>
+
+                                <div id="kc-form-options" class="${properties.kcFormOptionsClass!}">
+                    <div class="${properties.kcFormOptionsWrapperClass!}">
+                        <span><a href="${url.loginUrl}" class="ahac-href">${kcSanitize(msg("backToLogin"))?no_esc}</a></span>
+                    </div>
+                </div>
             </div>
         </form>
-    <#elseif section = "info" >
-        ${msg("emailInstruction")}
+
     </#if>
 </@layout.registrationLayout>
