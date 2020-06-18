@@ -27,7 +27,11 @@
                     <div id="input-type-effect">
                     <input tabindex="2" placeholder="Your password" id="password" class="input-type-format" name="password" type="password" autocomplete="off" />
                     </div>
-
+                        <div class="forgot-password-label">
+                            <#if realm.resetPasswordAllowed>
+                                <span><a tabindex="5" href="${url.loginResetCredentialsUrl}" class="forgotpw-ahac-href">${msg("doForgotPassword")}</a></span>
+                            </#if>
+                        </div>
 
                     <div id="kc-form-buttons">
                       <input type="hidden" id="id-hidden-input" name="credentialId" <#if auth.selectedCredential?has_content>value="${auth.selectedCredential}"</#if>/>
@@ -62,11 +66,7 @@
                             </div>
                         </#if>
                         </div>
-                        <div class="forgot-password-label">
-                            <#if realm.resetPasswordAllowed>
-                                <span><a tabindex="5" href="${url.loginResetCredentialsUrl}" class="forgotpw-ahac-href">${msg("doForgotPassword")}</a></span>
-                            </#if>
-                        </div>
+
 
                   </div>
 

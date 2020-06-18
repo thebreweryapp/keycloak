@@ -11,7 +11,7 @@
 
     border-color: #cc0000;
     color: #333333;
-    text-align: right;
+    text-align: left;
 }
 
 .emailins-label {
@@ -373,7 +373,7 @@ div.kc-logo-text span {
 
 .forgot-password-label {
     display: block;
-    text-align: center;
+    text-align: left;
     margin-top: 0.5em;
 }
 
