@@ -1,4 +1,4 @@
-<#import "template.ftl" as layout>
+<#import "brewery-template.ftl" as layout>
     <@layout.registrationLayout; section>
         <#if section="header">
             ${msg("doLogIn")}
@@ -28,8 +28,8 @@
                             <label for="otp" class="${properties.kcLabelClass!}">${msg("loginOtpOneTime")}</label>
                         </div>
 
-                        <div class="${properties.kcInputWrapperClass!}">
-                            <input id="otp" name="otp" autocomplete="off" type="text" class="${properties.kcInputClass!}"
+                        <div id="input-type-effect">
+                            <input id="otp" name="otp" autocomplete="off" type="text" class="input-type-format"
                             autofocus/>
                         </div>
                     </div>
@@ -40,9 +40,9 @@
                             </div>
                         </div>
 
-                        <div id="kc-form-buttons" class="${properties.kcFormButtonsClass!}">
+                        <div id="kc-form-buttons">
                             <input
-                                class="${properties.kcButtonClass!} ${properties.kcButtonPrimaryClass!} ${properties.kcButtonBlockClass!} ${properties.kcButtonLargeClass!}"
+                                class="kc-login"
                                 name="login" id="kc-login" type="submit" value="${msg("doLogIn")}" />
                         </div>
                     </div>

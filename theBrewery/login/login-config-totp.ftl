@@ -1,4 +1,4 @@
-<#import "template.ftl" as layout>
+<#import "otp-template.ftl" as layout>
 <@layout.registrationLayout displayInfo=true displayRequiredFields=true; section>
 
     <#if section = "header">
@@ -21,7 +21,7 @@
             <li>
                 <p>${msg("loginTotpManualStep2")}</p>
                 <p><span id="kc-totp-secret-key">${totp.totpSecretEncoded}</span></p>
-                <p><a href="${totp.qrUrl}" id="mode-barcode">${msg("loginTotpScanBarcode")}</a></p>
+                <p><a href="${totp.qrUrl}" id="mode-barcode" class="ahac-href">${msg("loginTotpScanBarcode")}</a></p>
             </li>
             <li>
                 <p>${msg("loginTotpManualStep3")}</p>
@@ -42,7 +42,7 @@
             <li>
                 <p>${msg("loginTotpStep2")}</p>
                 <img id="kc-totp-secret-qr-code" src="data:image/png;base64, ${totp.totpSecretQrCode}" alt="Figure: Barcode"><br/>
-                <p><a href="${totp.manualUrl}" id="mode-manual">${msg("loginTotpUnableToScan")}</a></p>
+                <p><a href="${totp.manualUrl}" id="mode-manual" class="ahac-href">${msg("loginTotpUnableToScan")}</a></p>
             </li>
         </#if>
         <li>
@@ -56,8 +56,8 @@
             <div class="${properties.kcInputWrapperClass!}">
                 <label for="totp" class="control-label">${msg("authenticatorCode")}</label> <span class="required">*</span>
             </div>
-            <div class="${properties.kcInputWrapperClass!}">
-                <input type="text" id="totp" name="totp" autocomplete="off" class="${properties.kcInputClass!}" />
+            <div id="input-type-effect">
+                <input type="text" id="totp" name="totp" autocomplete="off" class="input-type-format" />
             </div>
             <input type="hidden" id="totpSecret" name="totpSecret" value="${totp.totpSecret}" />
             <#if mode??><input type="hidden" id="mode" name="mode" value="${mode}"/></#if>
@@ -68,26 +68,27 @@
                 <label for="userLabel" class="control-label">${msg("loginTotpDeviceName")}</label> <#if totp.otpCredentials?size gte 1><span class="required">*</span></#if>
             </div>
 
-            <div class="${properties.kcInputWrapperClass!}">
-                <input type="text" class="form-control" id="userLabel" name="userLabel" autocomplete="off">
+            <div id="input-type-effect">
+                <input type="text" class="input-type-format" id="userLabel" name="userLabel" autocomplete="off">
             </div>
         </div>
-
+        <div id="kc-form-buttons"> 
         <#if isAppInitiatedAction??>
             <input type="submit"
-                   class="${properties.kcButtonClass!} ${properties.kcButtonPrimaryClass!} ${properties.kcButtonLargeClass!}"
+                   class="kc-login"
                    id="saveTOTPBtn" value="${msg("doSubmit")}"
             />
             <button type="submit"
-                    class="${properties.kcButtonClass!} ${properties.kcButtonDefaultClass!} ${properties.kcButtonLargeClass!} ${properties.kcButtonLargeClass!}"
+                    class="kc-login"
                     id="cancelTOTPBtn" name="cancel-aia" value="true" />${msg("doCancel")}
             </button>
         <#else>
             <input type="submit"
-                   class="${properties.kcButtonClass!} ${properties.kcButtonPrimaryClass!} ${properties.kcButtonBlockClass!} ${properties.kcButtonLargeClass!}"
+                   class="kc-login"
                    id="saveTOTPBtn" value="${msg("doSubmit")}"
             />
         </#if>
+        </div>
     </form>
     </#if>
 </@layout.registrationLayout>

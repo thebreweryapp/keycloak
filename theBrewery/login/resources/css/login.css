@@ -312,6 +312,17 @@ div.kc-logo-text span {
     margin-bottom: 120px;
 }
 
+.otp-form-wrapper {
+    margin-top: 0px;
+    width: 100%;
+    padding: 2.5em;
+    box-sizing: border-box;
+    font-size: 14px;
+    text-align: center;
+    overflow:auto;
+    margin-bottom: 10px;
+}
+
 #logo-container {
     border-radius: 6px 0 0 6px;
     background-color: #32333c;
