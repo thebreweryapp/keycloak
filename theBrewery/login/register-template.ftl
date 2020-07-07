@@ -78,7 +78,7 @@
             
       </div>
       <div class="footer">Powered by: <div>
-        <a href="https://www.keycloak.org/" id="poweredby-image"></a>
+        <a href="https://www.keycloak.org/" id="poweredby-image" target="_blank"></a>
       </div>
    </div>
 

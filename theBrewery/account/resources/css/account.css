@@ -19,7 +19,8 @@ header .navbar {
 }
 
 .navbar-title {
-    /* background-image: url('../img/the-brewery.png'); */
+    background-image: url('../img/the-brewery.png');
+    background-size: 78px;
     height: 25px;
     background-repeat: no-repeat;
     width: 123px;
@@ -92,10 +93,10 @@ header .navbar {
     border-right: 2px solid #aaa;
 }
 .bs-sidebar ul li.active a {
-    background-color: #c7e5f0;
-    border-color: #56bae0;
+    background-color: #f9cc41;
+    border-color: #fabf0f;
     font-weight: bold;
-    background-image: url(../img/icon-sidebar-active.png);
+    /* background-image: url(../img/icon-sidebar-active.png); */
     background-repeat: no-repeat;
     background-position: right center;
 }
@@ -184,14 +185,34 @@ header .navbar {
     top: 0;
 }
 
+input[type="text"]:focus, input[type="text"]:hover{
+    border-color: #ffdf6b;
+    box-shadow: inset 0 1px 1px #ffdf6b, 0 0 8px #ffdf6b;;
+}
+
+input[type="password"]:focus, input[type="password"]:hover{
+    border-color: #ffdf6b;
+    box-shadow: inset 0 1px 1px #ffdf6b, 0 0 8px #ffdf6b;;
+}
+
+
+
 #kc-form-buttons {
     text-align: right;
     margin-top: 10px;
 }
 
 #kc-form-buttons .btn-primary {
+    background-color: #f9cc41 !important;
+    background-image: linear-gradient(to bottom,#f8d671 0,#f9cc41 100%);
+    border-color: #f9cc41;
+    color: white;
     float: right;
     margin-left: 8px;
+}
+
+.btn-primary :hover{
+    background-image: linear-gradient(to bottom,#eeeeee 0,#f7e8bb 100%);
 }
 
 /* Authenticator page */

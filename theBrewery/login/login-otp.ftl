@@ -1,4 +1,4 @@
-<#import "brewery-template.ftl" as layout>
+<#import "totp-template.ftl" as layout>
     <@layout.registrationLayout; section>
         <#if section="header">
             ${msg("doLogIn")}

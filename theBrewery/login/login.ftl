@@ -50,7 +50,6 @@
                   </div>
                 </div>
 
-                
 
                 <div class="${properties.kcFormGroupClass!} ${properties.kcFormSettingClass!}">
                     <div id="kc-form-options">
@@ -66,23 +65,23 @@
                             </div>
                         </#if>
                         </div>
-
-
                   </div>
-
-
             </form>
 
         </#if>
         </div>
 
       </div>
+
+
     <#elseif section = "info" >
         <#if realm.password && realm.registrationAllowed && !registrationDisabled??>
             <div id="kc-registration">
                 <span>${msg("noAccount")} <a tabindex="6" href="${url.registrationUrl}" class="register-href">${msg("doRegister")}</a></span>
             </div>
+
         </#if>
     </#if>
+
 
 </@layout.registrationLayout>

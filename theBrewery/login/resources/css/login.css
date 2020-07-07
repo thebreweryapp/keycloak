@@ -346,6 +346,28 @@ div.kc-logo-text span {
     width: 50%;
 }
 
+#settings-image{
+    display: inline-block;
+    content: url('../img/gear.ico');
+    width: 2.5%;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+#settings-image:hover {
+    animation: rotate-btn .5s linear 3;
+    -webkit-animation: rotate-btn 2s linear 3;
+}
+
+@keyframes rotate-btn {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(-360deg);
+    }
+  }
+
 #kc-attempted-username{
     font-size: 20px;
     font-family:inherit;
@@ -409,7 +431,6 @@ div.kc-logo-text span {
 #kc-registration {
     margin-bottom: 15px;
 }
-
 
 /* TOTP */
 

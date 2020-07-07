@@ -38,6 +38,9 @@
                 <span id="logo-image"> </span>
             </div>
             <div class="login-form-wrapper">
+            <#--  <div id="acc-settings-link">  -->
+            <a href="http://localhost:8080/auth/realms/sample-realm/account/" id="settings-image" target="_blank" class="gear-effect" title="Account settings"></a>
+            <#--  </div>  -->
                 <div class="login-wrapper-content">
                     <div id="login-form-title">
                         <h1 class="h1-line-title"> Lets start brewing! </h1>
@@ -78,7 +81,7 @@
             
       </div>
       <div class="footer">Powered by: <div>
-        <a href="https://www.keycloak.org/" id="poweredby-image"></a>
+        <a href="https://www.keycloak.org/" id="poweredby-image" target="_blank"></a>
       </div>
 </body>
 </html>
