@@ -195,6 +195,16 @@ input[type="password"]:focus, input[type="password"]:hover{
     box-shadow: inset 0 1px 1px #ffdf6b, 0 0 8px #ffdf6b;;
 }
 
+/* input[id="email"]{
+    pointer-events: none !important;
+    background-color: #cccccc !important; 
+    border-color: #cccccc !important;
+    box-shadow: inset 0 1px 1px #cccccc, 0 0 8px #cccccc !important;;
+    cursor: not-allowed !important;    
+
+} */
+
+
 
 
 #kc-form-buttons {
