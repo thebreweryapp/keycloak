@@ -302,14 +302,14 @@ div.kc-logo-text span {
 }
 
 .info-form-wrapper {
-    margin-top: 0px;
+    margin-top: 10px;
     width: 100%;
     padding: 2.5em;
     box-sizing: border-box;
     font-size: 14px;
     text-align: center;
     overflow:auto;
-    margin-bottom: 120px;
+    margin-bottom: 220px;
 }
 
 .otp-form-wrapper {
@@ -424,8 +424,17 @@ div.kc-logo-text span {
 }
 
 #kc-terms-text {
-    margin-top: 0px;
-    margin-bottom: 20px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+.chkbx {
+    font-size: 9.5pt;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 20px;
+    color: black;
+    text-align: left;
+    margin-bottom: 2px;
 }
 
 #kc-registration {
@@ -731,10 +740,23 @@ a.zocial  {
 
 
 #kc-decline-terms :hover{
+    text-decoration: none;
     color: #fff;
     background-color: #f17974;
     border-color: #f17974;
     cursor: pointer;
+}
+
+#kc-accept-terms {
+    text-align: center;
+    display: inline-block;
+    width: 180px;
+}
+#kc-decline-terms {
+    display: inline-block;
+    /* height: 32px; */
+
+    /* width: 170px;     */
 }
 
 #kc-accept-terms :hover{
@@ -744,15 +766,21 @@ a.zocial  {
     cursor: pointer;
 }
 
+#kc-accept-terms :disabled{
+    color: #fff;
+    background-color: #32333c;
+    border-color: #ffdf6b;
+    cursor: not-allowed;
+}
+
 
 
 .terms-button-container {
+    margin-top: 9px;
     position: absolute;
     left: 50;
-    top: 80%;
-    width: 25rem;
-    /* right: 0%; */
-    /* margin-bottom: 5px; */
+    top: 62%;
+    width: 25rem;   
 
 }
 
@@ -849,7 +877,7 @@ a.zocial  {
     color: white;
     text-transform: none;
     padding: 20px;
-    margin-top: 1.5em;
+    margin-top: 0.5em;
     width: 100%;
     transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
     height: 32px;
@@ -860,6 +888,7 @@ a.zocial  {
 }
 
 .kc-decline-terms {
+    text-decoration: none;
     border: none;
     border-radius: 3px;
     background-color: #fc160e ;
@@ -869,11 +898,12 @@ a.zocial  {
     color: white;
     text-transform: none;
     padding: 20px;
+    padding-bottom: 20px;
     margin-top: 0.5em;
     width: 100%;
     transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
     height: 32px;
-    padding: 0 16px;
+    padding: 9px 70px;
     font-size: 14px;
     border-radius: 32px;
 
