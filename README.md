@@ -1,36 +1,14 @@
 # Keycloak Themes
 
-### Usage
+Themes can be deployed to Keycloak by copying the theme directory to themes or it can be deployed as an archive. During development you can copy the theme to the themes directory, but in production you may want to consider using an archive. An archive makes it simpler to have a versioned copy of the theme, especially when you have multiple instances of Keycloak for example with clustering.
 
-Copy the folder of the custom theme.
+## How to Install
 
-Note: In Development stage, In order to see changes without restarting the Keycloak server you need to edit the standalone.xml file on your Keycloak server to disable caching.
+Simply drop the jar in `$KEYCLOAK_HOME\standalone\deployments`, it will be automatically deployed by keycloak.
 
-located here: 
+## How to Use
 
-```javascript
-./standalone/configuration/standalone.xml
-```
-
-
-Make the following changes to standalone.
-
-```javscript
-<theme>
-    <staticMaxAge>-1</staticMaxAge>
-    <cacheThemes>false</cacheThemes>
-    <cacheTemplates>false</cacheTemplates>
-    ...
-</theme>
-```
-
-Remember to re-enable caching in production as it will significantly impact performance.
-
-
-Then, copy selected theme folder, paste it on the Keycloak's theme directory located here: 
-
-
-```javascript
-    keycloak-10.0.1/themes
-```
-there, you should be able to see the default themes, paste the 'brewery' folder on that directory. after you copied the new custom theme to the directory, you can now select that theme on the keycloak admin console.
+- Go to admin console, in Clients menu.
+- Select the Client resource you want to change the theme.
+- On the Settings Tab, Login Theme dropdown, you should see the list of themes available.
+- Select the theme you want to apply for your Client app.
