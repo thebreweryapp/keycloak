@@ -39,7 +39,7 @@
             </div>
             <div class="login-form-wrapper">
             <#--  <div id="acc-settings-link">  -->
-            <#--  <a href="https://accounts.thebrewery.dev/auth/realms/thebrewery-sso/account/" id="settings-image" target="_blank" class="gear-effect" title="Account settings"></a>  -->
+            <#--  <a href="/auth/realms/thebrewery-sso/account/" id="settings-image" target="_blank" class="gear-effect" title="Account settings"></a>  -->
             <#--  </div>  -->
                 <div class="login-wrapper-content">
                     <div id="login-form-title">
