@@ -1065,3 +1065,11 @@ form#kc-select-back-form div.login-pf-social-section {
     padding-left: 0px;
     border-left: 0px;
 }
+
+#login-card {
+    height: 750px;
+}
+
+.g-recaptcha {
+    padding-top: 20px;
+}
