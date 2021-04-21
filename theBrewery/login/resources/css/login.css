@@ -309,7 +309,7 @@ div.kc-logo-text span {
     font-size: 14px;
     text-align: center;
     overflow:auto;
-    margin-bottom: 220px;
+    margin-bottom: 250px;
 }
 
 .otp-form-wrapper {
@@ -776,7 +776,7 @@ a.zocial  {
 
 
 .terms-button-container {
-    margin-top: 9px;
+    margin-top: 30px;
     position: absolute;
     left: 50;
     top: 62%;
