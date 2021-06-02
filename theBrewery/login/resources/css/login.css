@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+
 .login-pf body {
     /* background: url("../img/keycloak-bg.png") no-repeat center center fixed; */
     background-size: cover;
@@ -138,7 +140,7 @@ div.kc-logo-text span {
 }
 
 .footer {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Red Hat Text', sans-serif;
     position: absolute;
     color: rgba(0, 0, 0, 0.65);
     text-align: right;
@@ -154,7 +156,7 @@ div.kc-logo-text span {
     white-space: nowrap;
     text-align: right;
     vertical-align: middle;
-    font-size: 16px;
+    font-size: 12px;
     color: #4a4a4a;
 }
 
@@ -168,7 +170,7 @@ div.kc-logo-text span {
     display: inline-block;
     width: 100%;
     color: rgba(0, 0, 0, 0.65);
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.5;
     background-color: #fff;
     background-image: none;
@@ -176,9 +178,9 @@ div.kc-logo-text span {
     border-radius: 4px;
     transition: all 0.3s;
 
-    height: 40px;
+    height: 25px;
     padding: 6px 11px;
-    font-size: 16px;
+    font-size: 12px;
 }
 
 
@@ -211,9 +213,9 @@ div.kc-logo-text span {
     border: 1px solid #d9d9d9;
     border-radius: 4px;
     transition: all 0.3s;
-    height: 30px;
+    height: 25px;
     padding: 5px 10px;
-    font-size: 15px;
+    font-size: 11px;
 }
 
 .row-format {
@@ -226,14 +228,14 @@ div.kc-logo-text span {
     line-height: 1.5;
     list-style: none;
     font-feature-settings: 'tnum';
-    margin-bottom: 24px;
+    margin-bottom: 10px;
     vertical-align: top;
 }
 
 
 
 #label-format {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Red Hat Text', sans-serif;
 }
 
 #login-card {
@@ -253,7 +255,7 @@ div.kc-logo-text span {
     line-height: 1.5;
     color: rgba(0, 0, 0, 0.65);
     position: relative;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Red Hat Text', sans-serif;
     vertical-align: top;
     margin-bottom: 24px;
     font-feature-settings: 'tnum';
@@ -262,8 +264,8 @@ div.kc-logo-text span {
 
 .h1-line-title {
     margin-top: 0;
-    font-size: 32px;
-    margin-bottom: 36px;
+    font-size: 25px;
+    margin-bottom: 25px;
     color: #4a4a4a;
 }
 
@@ -271,7 +273,7 @@ div.kc-logo-text span {
     margin-bottom: 0.5em;
     color: #4a4a4a;
     font-weight: 600;
-    font-size: 23px;
+    font-size: 18px;
     line-height: 1.35;
 }
 
@@ -304,6 +306,7 @@ div.kc-logo-text span {
 .info-form-wrapper {
     margin-top: 10px;
     width: 100%;
+    height: 370px;
     padding: 2.5em;
     box-sizing: border-box;
     font-size: 14px;
@@ -326,7 +329,7 @@ div.kc-logo-text span {
 #logo-container {
     border-radius: 6px 0 0 6px;
     background-color: #32333c;
-    max-width: 539px;
+    max-width: 430px;
     width: 100%;
     height: 100%;
     flex-shrink: 0;
@@ -429,9 +432,9 @@ div.kc-logo-text span {
 }
 
 .chkbx {
-    font-size: 9.5pt;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin-top: 20px;
+    font-size: 8pt;
+    font-family: 'Red Hat Text', sans-serif;
+    margin-top: 10px;
     color: black;
     text-align: left;
     margin-bottom: 2px;
@@ -710,26 +713,6 @@ a.zocial  {
     color: #fff;
 }
 
-
-/* #kc-form-buttons {
-    border: none;
-    border-radius: 3px;
-    background-color: #f9cc41 ;
-    border-color: #f9cc41;
-    color: rgba(0,0,0,0.6);
-    font-size: 14px;
-    color: white;
-    text-transform: none;
-    padding: 20px;
-    margin-top: 1.5em;
-    width: 100%;
-    transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-    height: 32px;
-    padding: 0 16px;
-    font-size: 14px;
-    border-radius: 32px;
-} */
-
 #kc-form-buttons :hover{
     color: #fff;
     background-color: #ffdf6b;
@@ -750,13 +733,10 @@ a.zocial  {
 #kc-accept-terms {
     text-align: center;
     display: inline-block;
-    width: 180px;
+    width: 140px;
 }
 #kc-decline-terms {
     display: inline-block;
-    /* height: 32px; */
-
-    /* width: 170px;     */
 }
 
 #kc-accept-terms :hover{
@@ -776,11 +756,10 @@ a.zocial  {
 
 
 .terms-button-container {
-    margin-top: 30px;
     position: absolute;
     left: 50;
     top: 62%;
-    width: 25rem;   
+    width: 20rem;   
 
 }
 
@@ -816,8 +795,8 @@ a.zocial  {
     margin: 0;
     padding: 0;
     color: rgba(0, 0, 0, 0.65);
-    font-size: 14px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 11px;
+    font-family: 'Red Hat Text', sans-serif;
 
     line-height: 1.5;
     list-style: none;
@@ -829,8 +808,8 @@ a.zocial  {
     margin: 0;
     padding: 0;
     color: rgba(0, 0, 0, 0.65);
-    font-size: 14px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 11px;
+    font-family: 'Red Hat Text', sans-serif;
     line-height: 1.5;
     list-style: none;
     font-feature-settings: 'tnum';
@@ -841,8 +820,8 @@ a.zocial  {
     margin: 0;
     padding: 0;
     color: rgba(0, 0, 0, 0.65);
-    font-size: 14px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 11px;
+    font-family: 'Red Hat Text', sans-serif;
     line-height: 1.5;
     list-style: none;
     font-feature-settings: 'tnum';
@@ -881,11 +860,11 @@ a.zocial  {
     width: 100%;
     transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
     height: 32px;
-    padding: 0 16px;
-    font-size: 14px;
+    padding: 0 10px;
+    font-size: 11px;
     border-radius: 32px;
 
-}
+} 
 
 .kc-decline-terms {
     text-decoration: none;
@@ -897,19 +876,17 @@ a.zocial  {
     font-size: 14px;
     color: white;
     text-transform: none;
-    padding: 20px;
+    padding: 10px;
     padding-bottom: 20px;
     margin-top: 0.5em;
     width: 100%;
     transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
     height: 32px;
-    padding: 9px 70px;
-    font-size: 14px;
+    padding: 9px 50px;
+    font-size: 11px;
     border-radius: 32px;
 
 }
-
-
 
 /* .kc-login :hover{
     color: #fff;
@@ -1067,9 +1044,11 @@ form#kc-select-back-form div.login-pf-social-section {
 }
 
 #login-card {
-    height: 750px;
+    height: 620px;
+    width: 800px;
 }
 
 .g-recaptcha {
-    padding-top: 20px;
+    padding-top: 10px;
+    height: 130px;
 }
