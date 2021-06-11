@@ -43,7 +43,7 @@
             <#--  </div>  -->
                 <div class="login-wrapper-content">
                     <div id="login-form-title">
-                        <h1 class="h1-line-title"> Lets start brewing! </h1>
+                        <h1 class="h1-line-title"> Let's start brewing! </h1>
                         <h3 class="h3-line-title"> Sign-in to experience The Brewery single sign-on. </h3>
                     </div>
                     
